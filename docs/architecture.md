@@ -1,6 +1,6 @@
 # Technical Architecture of the NYC Data Platform
 
---
+---
 
 ## 1. Architecture Objectives
 This architecture is designed to:
@@ -59,7 +59,7 @@ Vertex AI (Forecasting)
 * Idempotents DAGs
 * Incremental loads using update timestamps
 
---
+---
 ### 3.2 Cloud Storage - Raw data Storage
 
 **Role**
@@ -72,7 +72,7 @@ Vertex AI (Forecasting)
 * Partitioned by ingestion date
 * Data stored in structured format (JSON/Parquet)
 
---
+---
 ### 3.3 Big Query - Data Warehouse
 
 **Role**
@@ -90,7 +90,7 @@ Vertex AI (Forecasting)
 
 * Partition by snapshot_date
 * cluster by primary identifiers if relevant
---
+---
 
 ### 3.4 Transformations – dbt
 
@@ -105,7 +105,7 @@ Vertex AI (Forecasting)
 * Tests and snapshots
 * Documentation generation
 
---
+---
 ### 3.5 Business Intelligence – Looker
 
 **Role**
@@ -117,7 +117,7 @@ Vertex AI (Forecasting)
 * KPI-driven views
 * Single source of truth through the semantic layer
 * Decision-oriented dashboards
-
+---
 ### 3.6 ML - Vertex AI
 
 **Role**
@@ -130,7 +130,7 @@ Vertex AI (Forecasting)
 * Schedule retraining
 * Model registry
 * Predictions stored in BQ
-
+---
 ## 4. Non Functional-Requirements of the data platform
 
 |Requirements              | Approcah                    |
@@ -145,7 +145,7 @@ Vertex AI (Forecasting)
 As a reminder, non functional requirements are a must in any project or software design endeavors as it helps define how the system we're building should work as opposed to what the system should do(funcional requirements). Here's a link to have more explanations: [https://www.geeksforgeeks.org/software-engineering/functional-vs-non-functional-requirements/]
 
 ```
---
+---
 ## 5. Tradeoffs ad future developments
 
 We chose to :

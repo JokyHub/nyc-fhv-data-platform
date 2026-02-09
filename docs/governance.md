@@ -12,13 +12,13 @@ Ensure that the platform delivers:
 
 ## 2. Data Ownership
 
-|Asset	            |Owner                 |
---------------------|----------------------|
-|Raw Data	        |Data Engineering      |
-|Analytics Models   |Analytics Engineering |
-|KPIs	            |Business / Policy     |
-|Dashboards	        |Analytics             |
-|ML Models          |Data Science          |
+|Asset	            |Owner                     |
+--------------------|--------------------------|
+|Raw Data	        |Data Engineer             |
+|Analytics Models   |Analytics / Data Engineer |
+|KPIs	            |Business or Data Analytics|
+|Dashboards	        |Data Analytics            |
+|ML Models          |Data Science              |
 
 ---
 
