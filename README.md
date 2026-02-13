@@ -206,6 +206,35 @@ The architecture follows a **layered, auditable design** suitable for public-sec
 
 ---
 
-## 13. Next Steps
+## 13. Environment Strategy (Simplified for Phase 1)
+
+For the initial implementation of this project, a single GCP environment will be used to keep development focused and execution simple.
+
+This allows:
+
+* Faster iteration
+* Reduced infrastructure complexity
+* Lower cloud costs during early development
+
+**Important Note on Production Best Practice**
+
+In a real public-sector or enterprise deployment, the recommended approach is to implement separate DEV, TEST, and PROD environments with:
+
+* Isolated GCP projects or logically separated datasets
+* Environment-specific Cloud Storage buckets
+* Separate BigQuery datasets per environment
+* Controlled promotion via CI/CD pipelines
+* Strict IAM boundaries protecting production data
+
+This separation ensures:
+
+* Safer experimentation
+* Controlled releases
+* Auditability and compliance
+* Reduced operational risk
+
+The current single-environment setup is intentionally simplified for portfolio development. The architecture is designed so that environment separation can be introduced without structural refactoring.
+
+## 14. Next Steps
 
 * Will reflect on possible optimization when done!
